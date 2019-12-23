@@ -1,0 +1,23 @@
+<footer class="p-2 bg-dark text-white">
+
+    <div class="col-lg-12 row">
+        <div class="col-lg-8">
+            <marquee><h5><strong>Este texto se mueve de derecha a izquierda</strong></h5></marquee>
+        </div>
+        <div class="col-lg-4">
+            <div class="text-right">
+                <strong>Server Status:</strong>
+                <span *ngIf="!ws.socketStatus" class="text-danger"><strong> Offline</strong></span>
+                <span *ngIf="ws.socketStatus" class="text-success"><strong> Online</strong></span>
+        
+            </div>
+        </div>
+        
+ 
+
+            
+    </div>
+
+
+
+</footer>

@@ -1,5 +1,5 @@
 {
-  "name": "socket-client",
+  "name": "turnero-digital",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,6 +19,9 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "@ng-bootstrap/ng-bootstrap": "^5.1.4",
+    "bootstrap": "^4.4.1",
+    "ngx-socket-io": "^3.0.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -43,5 +46,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "browser": {
+    "child_process": false
   }
 }

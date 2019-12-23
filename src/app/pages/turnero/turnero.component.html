@@ -1,0 +1,95 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<div class="container-fluid animated fadeIn slow" [ngClass]="{'colorFondo': mostarPopUp}">
+
+
+    <div class="row" *ngIf="!mostarPopUp">
+        <div class="col-lg-12 row">
+            <div class="col-lg-6" style="background-color: #6A7EE1 !important;">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-center text-white"><h3>TICKET LLAMADO</h3></th>
+                        </tr>
+                      <tr>
+                        <th scope="col" class="text-center text-white"><h2>BOX</h2></th>
+                        <th scope="col" class="text-center text-white"><h2>TICKET</h2></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let i of [1]">
+                        <th scope="row" class="text-center text-white"><h2>R61</h2></th>
+                        <td class="text-center text-white"><h2>23</h2></td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                  <hr>
+
+                  <video controls autoplay width="920" height="450">
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+
+                
+                
+
+            </div>
+            <div class="col-lg-6">
+
+                  <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-center"><h3>ULTIMOS TICKETS LLAMADOS</h3></th>
+                        </tr>
+                      <tr>
+                        <th scope="col"  class="text-center"><h2>BOX</h2></th>
+                        <th scope="col"  class="text-center"><h2>TICKET</h2></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let i of turnos">
+                        <th scope="row" class="text-center"><h2>{{ i.box }}</h2></th>
+                        <td class="text-center text-info"><h2>{{ i.ticket }}</h2></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container h-100 animated zoomIn fast" *ngIf="mostarPopUp">
+        <div class="row align-items-center h-100">
+            <div class="col-6 mx-auto">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="text-center text-white"><h3>TICKET LLAMADO</h3></th>
+                            </tr>
+                          <tr>
+                            <th scope="col" class="text-center text-white"><h2>BOX</h2></th>
+                            <th scope="col" class="text-center text-white"><h2>TICKET</h2></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of [1]">
+                            <th scope="row" class="text-center text-white"><h2>R61</h2></th>
+                            <td class="text-center text-white"><h2>23</h2></td>
+                          </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+
+</div>    
+
+
+
+<app-footer></app-footer>

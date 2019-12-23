@@ -1,0 +1,20 @@
+.entero {
+    width: 100% !important;
+}
+
+h1 {
+    font-size : 4.5cm;
+}
+
+h2 {
+    font-size : 2cm;
+}
+
+.container-fluid {
+    height: 100%;
+    position: fixed;
+}
+
+.colorFondo {
+    background-color: #6A7EE1 !important;
+}
